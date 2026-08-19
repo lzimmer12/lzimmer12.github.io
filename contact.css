@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'Neutraface';
+  src: url('neutraface-text/Neutraface_Text_Book.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal
+}
+@font-face {
+  font-family: 'Neutraface_Bold';
+  src: url('neutraface-text/Neutraface_Text_Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face {
+    font-family: "NHaasGroteskDSPro-65Md";
+    src: url("https://db.onlinewebfonts.com/t/c891e94039740e4a24a9f53324fd91be.eot");
+    src: url("https://db.onlinewebfonts.com/t/c891e94039740e4a24a9f53324fd91be.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/c891e94039740e4a24a9f53324fd91be.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/c891e94039740e4a24a9f53324fd91be.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/c891e94039740e4a24a9f53324fd91be.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/c891e94039740e4a24a9f53324fd91be.svg#NHaasGroteskDSPro-65Md")format("svg");
+}
+
+head {
+  font-family: NHaasGroteskDSPro-65Md, sans-serif;
+}
+body {
+  font-family: NHaasGroteskDSPro-65Md, sans-serif;
+}
+
+/*
+
+header.header {
+  position: fixed;
+  top: 4%;
+}
+*/
+
+/* The navigation bar */
+.navbar {
+  font-family: NHaasGroteskDSPro-65Md, sans-serif;
+  display: flex;
+  align-items: baseline;   /* aligns the three <a> elements to each other */
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;        
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+}
+
+.navbar a {
+  /*padding: 0, 10px;         /* no height, no display:flex */
+  font-weight: bold;
+  color: #000000;
+}
+
+.navbar a:hover
+{
+   color: hsl(0, 0%, 49%);
+}
+.navbar a:link
+{
+   color: #000000;
+   text-decoration: none;
+}
+/*.navbar a:visited
+{
+   color: #000000;
+   text-decoration: none;
+}
+/*.navbar a:active
+{
+   color: #000000;
+   text-decoration: none;
+}*/
+
+.navbar{.logo {
+  &:hover{  
+    color: #000000;
+    text-decoration: none;}
+  font-size: 3rem;
+  font-weight: bold;
+  /*justify-self: center;*/
+}  }
+
+/* Main content */
+.main {
+  font-family: NHaasGroteskDSPro-65Md, sans-serif;
+  font-size: 1.3rem;
+  margin-top: 90px; /* Add a top margin to avoid content overlay */
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.main a:visited
+{
+  color:blue;
+   text-decoration: none;
+}
+
+.body {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.body img {
+  width: 50vw;
+}

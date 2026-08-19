@@ -1,0 +1,198 @@
+@font-face {
+  font-family: 'Neutraface';
+  src: url('neutraface-text/Neutraface_Text_Book.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal
+}
+@font-face {
+  font-family: 'Neutraface_Bold';
+  src: url('neutraface-text/Neutraface_Text_Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face {
+    font-family: "NHaasGroteskDSPro-65Md";
+    src: url("https://db.onlinewebfonts.com/t/c891e94039740e4a24a9f53324fd91be.eot");
+    src: url("https://db.onlinewebfonts.com/t/c891e94039740e4a24a9f53324fd91be.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/c891e94039740e4a24a9f53324fd91be.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/c891e94039740e4a24a9f53324fd91be.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/c891e94039740e4a24a9f53324fd91be.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/c891e94039740e4a24a9f53324fd91be.svg#NHaasGroteskDSPro-65Md")format("svg");
+}
+
+head {
+  font-family: NHaasGroteskDSPro-65Md, sans-serif;
+}
+body {
+  font-family: NHaasGroteskDSPro-65Md, sans-serif;
+}
+
+/*
+
+header.header {
+  position: fixed;
+  top: 4%;
+}
+*/
+
+/* The navigation bar */
+.navbar {
+  font-family: NHaasGroteskDSPro-65Md, sans-serif;
+  display: flex;
+  align-items: baseline;   /* aligns the three <a> elements to each other */
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;        
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+}
+
+.navbar a {
+  /*padding: 0, 10px;         /* no height, no display:flex */
+  font-weight: bold;
+  color: #000000;
+}
+
+.navbar a:hover
+{
+   color: hsl(0, 0%, 49%);
+}
+.navbar a:link
+{
+   color: #000000;
+   text-decoration: none;
+}
+/*.navbar a:visited
+{
+   color: #000000;
+   text-decoration: none;
+}
+/*.navbar a:active
+{
+   color: #000000;
+   text-decoration: none;
+}*/
+
+.navbar{.logo {
+  &:hover{  
+    color: #000000;
+    text-decoration: none;}
+  font-size: 3rem;
+  font-weight: bold;
+  /*justify-self: center;*/
+}  }
+
+/* Main content */
+.main {
+  font-family: NHaasGroteskDSPro-65Md, sans-serif;
+  margin-top: 90px; /* Add a top margin to avoid content overlay */
+  display: flex;             /* Activates flexbox layout */
+  justify-content: center;   /* Centers items horizontally (Main Axis) */
+  align-items: center;       /* Centers items vertically (Cross Axis) */
+  
+  min-height: calc(100vh - 90px); 
+}
+
+.main a:visited
+{
+  color:blue;
+  text-decoration: none;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.submission {
+  padding: 2rem;
+  font-size: 3rem;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  /*text-shadow: 1px 1px 1px black; */
+  background-color: rgb(66, 66, 66);
+  box-shadow:
+    inset 2px 2px 3px rgba(90, 89, 89, 0.6),
+    inset -2px -2px 3px rgb(0 0 0 / 0.6);
+}
+
+/*.choose {
+  display:none
+  padding: 2rem;
+  font-size: 3rem;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  /*text-shadow: 1px 1px 1px black; 
+  background-color: rgb(97, 97, 97);
+  /*background-image: linear-gradient(
+    to top left,
+    rgba(179, 176, 176, 0.2),
+    rgb(0 0 0 / 0.2) 30%,
+    transparent
+  ); 
+  box-shadow:
+    inset 2px 2px 3px rgba(90, 89, 89, 0.6),
+    inset -2px -2px 3px rgb(0 0 0 / 0.6);
+} */
+
+.upload { 
+  display: flex;
+}
+/* Styles the button itself */
+.upload::file-selector-button {
+  font-size: 3rem;
+  background-color: rgb(97, 97, 97);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Handles the hover state */
+.upload::file-selector-button:hover {
+  background-color: rgb(45, 44, 44);
+}
+
+.submit {
+  padding: 2rem;
+  font-size: 2rem;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  /*text-shadow: 1px 1px 1px black; */
+  background-color: rgb(85, 85, 85);
+  /*background-image: linear-gradient(
+    to top left,
+    rgba(179, 176, 176, 0.2),
+    rgb(0 0 0 / 0.2) 30%,
+    transparent
+  ); */
+  box-shadow:
+    inset 2px 2px 3px rgba(90, 89, 89, 0.6),
+    inset -2px -2px 3px rgb(0 0 0 / 0.6);
+}
+
+.submit:hover {
+  background-color: rgb(45, 44, 44);
+}
+
+.submit:active_2 {
+  box-shadow:
+    inset -2px -2px 3px rgba(84, 84, 84, 0.6),
+    inset 2px 2px 3px rgb(0 0 0 / 0.6);
+}
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="upload.css">
+    <meta charset="UTF-8">
+    <title> Mudd Digital Project </title>
+</head>
+
+
+
+<body>
+  <div class="navbar">  
+    <a href="mdp_library.html" > Library </a>
+    <a href="mdp_upload.html" > Upload </a>
+    <a href="mudd_digital_project.html" class="logo"> Mudd Digital Project </a>
+    <a href="mdp_contact.html"> Contact </a>
+    <a href="mdp_about.html" > About </a>
+  </div>
+
+  <div class="main">
+    <div> 
+    <form action="upload.js" method="POST" enctype="multipart/form-data" class="form"> 
+      <label for="imageSelect"></label>
+      <label > <input class="upload" type="file" name="myImage" id="image-picker" accept="image/*" multiple> </label>
+      <br><br>
+      <button name="submit" type="submit" class="submit" >Submit</button>
+    </form>
+    </div>
+  </div>
+</body> 
+
+</html>
